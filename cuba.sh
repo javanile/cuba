@@ -44,4 +44,4 @@ if [[ "${STATUS}" != "200" ]]; then
 fi
 
 echo -e "\e[44m\e[97m ${STATUS} \e[0m"
-curl -sL "https://${URL}" | bash -s "${@:2}"
+curl -sL "https://${URL}" | bash -s -- "${@:2}"
