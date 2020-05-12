@@ -5,3 +5,9 @@ curl -i https://git.io \
      -F "url=https://raw.githubusercontent.com/javanile/cuba/master/installer.sh" \
      -F "code=cuba.sh"
 ```
+
+```bash
+curl -i https://git.io \
+     -F "url=https://raw.githubusercontent.com/javanile/cuba/master/cub.sh" \
+     -F "code=cuba.sh"
+```

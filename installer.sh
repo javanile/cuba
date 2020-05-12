@@ -3,7 +3,7 @@
 # CUBA
 # ====
 #
-# The best LCOV framework around BASH projects.
+# CURL/BASH running utility.
 #
 # Copyright (c) 2020 Francesco Bianco <bianco@javanile.org>
 #

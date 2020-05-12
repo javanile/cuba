@@ -3,7 +3,7 @@
 # CUBA
 # ====
 #
-# The best LCOV framework around BASH projects.
+# CURL/BASH running utility.
 #
 # Copyright (c) 2020 Francesco Bianco <bianco@javanile.org>
 #
@@ -29,19 +29,19 @@
 set -e
 
 if [[ -z "${1}" ]]; then
-  echo -e "\e[44m\e[97m\e[1m USAGE \e[0m\e[0m\e[47m\e[97m cuba [COMMAND] [ARGUMENT]... \e[0m"
+  echo -e "Usage:  cuba [COMMAND] [ARGUMENT]...  (eg. cuba list)"
   exit 1
 fi
 
 URL=git.io/${1}.sh
 STATUS=$(curl -sLI "https://${URL}" | grep "HTTP/1.1" | tail -1 | tr -dc 0-9 | tail -c 3)
 
-echo -en "\e[43m\e[97m\e[1m CURL \e[0m\e[47m\e[97m ${URL} \e[0m"
+echo -en "\e[43m\e[97m\e[1m CURL \e[0m\e[104m\e[97m ${URL} \e[0m"
 
 if [[ "${STATUS}" != "200" ]]; then
-  echo -e "\e[41m\e[97m\e[1m ${STATUS} \e[0m"
+  echo -e "\e[41m\e[97m ${STATUS} \e[0m"
   exit 2
 fi
 
-echo -e "\e[44m\e[97m\e[1m ${STATUS} \e[0m"
+echo -e "\e[44m\e[97m ${STATUS} \e[0m"
 curl -sL "https://${URL}" | bash -s "${@:2}"
