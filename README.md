@@ -8,6 +8,6 @@ curl -i https://git.io \
 
 ```bash
 curl -i https://git.io \
-     -F "url=https://raw.githubusercontent.com/javanile/cuba/master/cub.sh" \
-     -F "code=cuba.sh"
+     -F "url=https://raw.githubusercontent.com/javanile/cuba/master/cuba-list.sh" \
+     -F "code=list.sh"
 ```
