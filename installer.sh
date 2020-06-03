@@ -49,7 +49,7 @@ main() {
   local cuba_bin=/usr/local/bin/cuba
   local cuba_src=${cuba_cdn}/cuba.sh
 
-  curl -s ${cuba_cdn}/cuba.txt
+  curl -s ${cuba_cdn}/sign.nfo
   [[ -z "${1}" ]] || echo -e "\e[43m\e[97m\e[1m INFO \e[0m Arguments: ${@}"
   echo -e "\e[43m\e[97m\e[1m INFO \e[0m Installing 'cuba' as root..."
   run_as_root curl -sLo "${cuba_bin}" "${cuba_src}?ts=$(date +%s)"

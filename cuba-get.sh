@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ##
 # CUBA
@@ -36,5 +36,7 @@ bpkg_install=${bpkg_lib}/install/install.sh
 
 [[ $EUID -ne 0 ]] && bash="sudo bash"
 
-( curl -s ${bpkg_install}; echo "bpkg_json=\$(curl -s ${bpkg_json})";
-  echo 'bpkg-json () { bash -c "${bpkg_json}" -- "$@"; }'; echo 'bpkg_install --global "$@"'; ) | ${bash} -s -- "$@"
+( curl -s ${bpkg_install};
+  echo "bpkg_json=\$(curl -s ${bpkg_json})";
+  echo 'bpkg-json () { bash -c "${bpkg_json}" -- "$@"; }';
+  echo 'bpkg_install --global "$@"' ) | ${bash} -s -- "$@"
