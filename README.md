@@ -14,6 +14,6 @@ curl -i "https://git.io" \
 
 ```bash
 curl -i "https://git.io" \
-     -d "url=https://raw.githubusercontent.com/javanile/cuba/master/cuba-install.sh" \
-     -d "code=install.sh"
+     -d "url=https://raw.githubusercontent.com/javanile/cuba/master/cuba-get.sh" \
+     -d "code=get.sh"
 ```
