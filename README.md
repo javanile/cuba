@@ -1,6 +1,6 @@
 # cuba
 
-https://img.shields.io/badge/bpkg-0.0.1-6ab825
+![bpkg](https://img.shields.io/badge/bpkg-0.0.1-6ab825)
 
 ```bash
 curl -i "https://git.io" \
@@ -18,4 +18,10 @@ curl -i "https://git.io" \
 curl -i "https://git.io" \
      -d "url=https://raw.githubusercontent.com/javanile/cuba/master/cuba-get.sh" \
      -d "code=get.sh"
+```
+
+```bash
+curl -i "https://git.io" \
+     -d "url=https://raw.githubusercontent.com/javanile/cuba/master/cuba-clone.sh" \
+     -d "code=clone.sh"
 ```
