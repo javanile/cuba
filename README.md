@@ -1,4 +1,4 @@
-# cuba
+# Cuba
 
 ![bpkg](https://img.shields.io/badge/bpkg-0.0.1-6ab825)
 
