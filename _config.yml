@@ -1,0 +1,8 @@
+##
+## Version: 1.0.1
+##
+
+title: "cURL + BASH = Cuba"
+url: "https://cuba.cf"
+remote_theme: "javanile/package-manager@main"
+primary_color: "#293137"
