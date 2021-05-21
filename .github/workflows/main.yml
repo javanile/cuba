@@ -1,7 +1,16 @@
 on:
   schedule:
     - cron: 0 0 1 * * # run monthly
-  repository_dispatch: # run manually
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
  
  
 name: Broken Link Check
