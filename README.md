@@ -2,6 +2,12 @@
 
 ![bpkg](https://img.shields.io/badge/bpkg-0.0.1-6ab825)
 
+
+```
+alias cuba='curl -sL cuba.cf/cuba | bash -s --'
+```
+
+
 ```
 curl -sL cuba.cf/cuba | bash
 ```
